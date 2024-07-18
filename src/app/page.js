@@ -1,8 +1,21 @@
-import Image from "next/image";
+"use client";
+//import Image from "next/image";
 import styles from "./page.module.css";
+import SSS from "./SSS";
 
 export default function Home() {
   return (
+    <div className={styles.accordionMain}>
+      <h1>Project 2: SSS/Accordion</h1>
+      <div className={styles.sssContainer}>
+        <h2>Sıkça Sorulan Sorular</h2>
+        <div>
+          <SSS />
+        </div>
+      </div>
+    </div>
+
+    /*
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
@@ -91,5 +104,6 @@ export default function Home() {
         </a>
       </div>
     </main>
+    */
   );
 }
